@@ -1,0 +1,5 @@
+flask>=2.0
+numpy
+opencv-python-headless    # or opencv-python if you need GUI
+ultralytics
+mediapipe
