@@ -45,32 +45,6 @@ Detected violations can automatically trigger alerts through WhatsApp along with
 * Detection confidence display
 * Responsive Flask-based dashboard
 
----
-
-## System Architecture
-
-```text
-Web Interface
-      │
-      ▼
- Flask Backend
-      │
- ┌────┼─────────────────────┐
- │    │    │    │    │
- ▼    ▼    ▼    ▼    ▼
-Blink Mask Phone Smoke Hand
-Detection Modules
-      │
-      ▼
- Alert Manager
-      │
- ┌───────────────┐
- │ Cloudinary    │
- │ Twilio API    │
- └───────────────┘
-```
-
----
 
 ## Detection Modules
 
@@ -167,42 +141,13 @@ Hand tracking is used to improve context awareness across multiple modules inclu
 
 ---
 
-## Project Structure
-
-```text
-Driver_Monitoring_System/
-│
-├── app.py
-├── requirements.txt
-├── train.ipynb
-│
-├── models/
-│   ├── best.pt
-│   ├── yolov8n.pt
-│   ├── handdsa.pt
-│   └── detection_module.pt
-│
-├── templates/
-│   └── index.html
-│
-├── alert_system.py
-├── blink_detection.py
-├── hand_detection.py
-├── mask_detection.py
-├── phone_detection.py
-├── smoke_detection.py
-└── utils.py
-```
-
----
-
 ## Installation
 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/Driver_Monitoring_System.git
-cd Driver_Monitoring_System
+git clone https://github.com/harshdave05/AI-Driver-Monitoring-System.git
+cd AI-Driver-Monitoring-System
 ```
 
 ### Create Virtual Environment
@@ -228,19 +173,6 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## Model Setup
-
-Place the following model files inside the `models/` directory.
-
-| Model               | Purpose                  |
-| ------------------- | ------------------------ |
-| best.pt             | Face Mask Detection      |
-| yolov8n.pt          | General Object Detection |
-| handdsa.pt          | Hand Detection           |
-| detection_module.pt | Smoking Detection        |
 
 ---
 
